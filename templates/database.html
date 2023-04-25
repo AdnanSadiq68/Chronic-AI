@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Results</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      label,
+      input {
+        margin: 10px 0;
+      }
+
+      #submit-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      .styled-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: 0.3s ease;
+      }
+
+      .styled-button:hover {
+        background-color: #3e8e41;
+      }
+
+      .styled-button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Test</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in n %}
+        <tr>
+          <td>{{ i[0] }}</td>
+          <td>{{ i[1] }}</td>
+          <td>{{ i[2] }}</td>
+          <td>{{ i[3] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <form action="/delete_datbase" method="POST">
+      <input
+        class="styled-button"
+        type="submit"
+        id="submit-button"
+        value="Delete"
+      />
+    </form>
+    <form action="/email_database" method="POST">
+      <!-- input email here type email-->
+      <h3>Enter your email to receive the database</h3>
+      <input type="email" id="email" name="email" required /><br />
+      <input
+        class="styled-button"
+        type="submit"
+        id="submit-button"
+        value="Email"
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #3f51b1, #5c6bc0, #7986cb);
+        animation: gradient 10s ease infinite;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      #test-form {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      a button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/data_add" method="POST" id="test-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required /><br />
+
+      <label for="test-name">Test Name:</label>
+      <input
+        type="text"
+        id="test-name"
+        name="test-name"
+        value="{{n[0]}}"
+      /><br />
+
+      <label for="result">Result:</label>
+      <input type="text" id="result" name="result" value="{{n[1]}}" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

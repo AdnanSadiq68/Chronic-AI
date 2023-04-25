@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-lg-6 {
+            flex: 1;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/results" method="POST">
+        <div class="row">
+            <div class="input">
+                <h1>STROKE</h1>
+                <h6>(PUT '1' FOR YES AND '0' FOR FALSE.)</h6>
+                <label for="age"> age
+                    <input type="number" name="age">
+                </label> <br><br>
+               <label for="HyperTension"> HyperTension
+                    <input type="number" name="HyperTension"  min="0" max="1">
+                </label> <br><br>
+                 <label for="HeartDisease> HeartDisease
+                    <input type="number" name="HeartDisease"  min="0" max="1">
+                </label> <br><br>
+                 <label for="Sorethroat"> Sorethroat
+                    <input type="number" name="Sorethroat"  min="0" max="1">
+                </label> <br><br>
+                 <label for="Ever_married"> Ever_married
+                    <input type="number" name="Ever_married"  min="0" max="1">
+                </label> <br><br>
+                 <label for="residency_type"> residency_type
+                    <input type="number" name="residency_type"  min="0" max="1">
+                </label> <br><br>
+                 <label for="avg_glucose_level"> avg_glucose_level
+                    <input type="number" name="avg_glucose_level">
+                </label> <br><br>
+                 <label for="bmi"> bmi
+                    <input type="number" name="bmi">
+                </label> <br><br>
+                 <label for="HeartDisease"> HeartDisease
+                    <input type="number" name="HeartDisease"  min="0" max="1">
+                </label> <br><br>
+                 <label for="Gender_male"> Gender_male
+                    <input type="number" name="Gender_male"  min="0" max="1">
+                </label> <br><br>
+                 <label for="Gender_female"> Gender_female
+                    <input type="number" name="Gender_female"  min="0" max="1">
+                </label> <br><br>
+                 <label for="never_worked"> never_worked
+                    <input type="number" name="never_worked"  min="0" max="1">
+                </label> <br><br>
+                 <label for="work_type_private"> work_type_private
+                    <input type="number" name="work_type_private"  min="0" max="1">
+                </label> <br><br>
+                 <label for=" work_type_self_employed">  work_type_self_employed
+                    <input type="number" name=" work_type_self_employed  min="0" max="1">
+                </label> <br><br>
+                 <label for="children"> children
+                    <input type="number" name="children"  min="0" max="1">
+                </label> <br><br>
+                 <label for="formerly_smoked"> formerly_smoked
+                    <input type="number" name="formerly_smoked"  min="0" max="1">
+                </label> <br><br>
+                 <label for="never_smoked"> never_smoked
+                    <input type="number" name="never_smoked"  min="0" max="1">
+                </label> <br><br>
+                 <label for="FamilyworkinginPublicExposedPlaces"> Family working in Public Exposed Places
+                    <input type="number" name="FamilyworkinginPublicExposedPlaces"  min="0" max="1">
+                </label> <br><br>
+                 <label for="smoking_status"> smoking_status
+                    <input type="number" name="smoking_status"  min="0" max="1">
+                </label> <br><br>
+            </div>
+
+            
+        </div>     
+        <input type="submit" value="Submit">
+        </div> 
+    </form>
+</body>
+</html>

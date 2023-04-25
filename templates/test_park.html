@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Add CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col-lg-6 {
+        flex: 1;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/sub" method="POST">
+      <div class="row">
+        <div class="col-lg-6">
+          <label for="mdvp_fo">
+            MDVP_FO(Hz)
+            <input type="text" name="mdvp_fo" id="mdvp_fo" />
+          </label>
+          <br /><br />
+          <label for="mdvp_fhi">
+            MDVP_Fhi(Hz)
+            <input type="text" name="mdvp_Fhi" id="mdvp_Fhi" />
+          </label>
+          <br /><br />
+          <label for="mdvp_Flo"
+            >MDVP_Flo(Hz)
+            <input type="text" name="mdvp_Flo" id="mdvp_Flo" />
+          </label>
+          <br /><br />
+          <label for="mdvp_jitter">
+            MDVP_Jitter
+            <input type="text" name="mdvp_jitter" id="mdvp_jitter" />
+          </label>
+          <br /><br />
+          <label for="mdvp_jabs">
+            MDVP_JABS
+            <input type="text" name="mdvp_jabs" id="mdvp_jabs" />
+          </label>
+          <br /><br />
+          <label for="mdvp_RAP">
+            MDVP_RAP
+            <input type="text" name="mdvp_RAP" id="mdvp_RAP" />
+          </label>
+          <br /><br />
+          <label for="mdvp_PPQ">
+            MDVP_PPQ
+            <input type="text" name="mdvp_PPQ" id="mdvp_PPQ" />
+          </label>
+          <br /><br />
+          <label for="jitter_DDP">
+            JITTER_DDP
+            <input type="text" name="jitter_DDP" id="jitter_DDP" />
+          </label>
+          <br /><br />
+          <label for="mdvp_shimmer">
+            MDVP_Shimmer
+            <input type="text" name="mdvp_shimmer" id="mdvp_shimmer" />
+          </label>
+          <br /><br />
+          <label for="mdvp_shimmerdb">
+            MDVP_Shimmer(db)
+            <input type="text" name="mdvp_shimmerdb" id="mdvp_shimmerdb" />
+          </label>
+          <br /><br />
+          <label for="shimmer_apq3"
+            >Shimmer_apq3
+            <input type="text" name="shimmer_apq3" id="shimmer_apq3" />
+          </label>
+          <br /><br />
+        </div>
+
+        <div class="col-lg-6">
+          <label for="shimmer_apq5"
+            >Shimmer_apq5
+            <input type="text" name="shimmer_apq5" id="shimmer_apq5" />
+          </label>
+          <br /><br />
+          <label for="mdvp_apq">
+            MDVP_APQ
+            <input type="text" name="mdvp_apq" id="mdvp_apq" />
+          </label>
+          <br /><br />
+          <label for="shimmer_DDA"
+            >Shimmer_DDA
+            <input type="text" name="shimmer_DDA" id="shimmer_DDA" />
+          </label>
+          <br /><br />
+          <label for="nhr">
+            NHR
+            <input type="text" name="nhr" id="nhr" />
+          </label>
+          <br /><br />
+          <label for="hnr">
+            HNR
+            <input type="text" name="hnr" id="hnr" />
+          </label>
+          <br /><br />
+          <label for="rpde"
+            >RPDE
+            <input type="text" name="rpde" id="rpde" />
+          </label>
+          <br /><br />
+          <label for="dfa">
+            DFA
+            <input type="text" name="dfa" id="dfa" />
+          </label>
+          <br /><br />
+          <label for="spread1">
+            SPREAD1
+            <input type="text" name="spread1" id="spread1" />
+          </label>
+          <br /><br />
+          <label for="spread2">
+            SPREAD2
+            <input type="text" name="spread2" id="spread2" />
+          </label>
+          <br /><br />
+          <label for="d2">
+            D2
+            <input type="text" name="d2" id="d2" />
+          </label>
+          <br /><br />
+          <label for="PPE">
+            PPE
+            <input type="text" name="ppe" id="ppe" />
+          </label>
+          <br />
+          <br />
+        </div>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

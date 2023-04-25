@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-lg-6 {
+            flex: 1;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/sub_heart" method="POST">
+        <div class="row">
+            <div class="input">
+                <h1>Heart Health CHECKUP</h1>
+                <h6>(PUT '1' FOR YES AND '0' FOR FALSE.)</h6>
+                <label for=AGE"> AGE
+                    <input type="number" name="AGE">
+                </label> <br><br>
+               <label for="GENDER"> GENDER
+                    <input type="number" name="GENDER"  min="0" max="1">
+                </label> <br><br>
+                 <label for="CHEST PAIN"> CHEST PAIN
+                    <input type="number" name="CHEST PAIN"  min="0" max="1">
+                </label> <br><br>
+                 <label for="TRESTBPS"> TRESTBPS
+                    <input type="number" name="TRESTBPS">
+                </label> <br><br>
+                 <label for="CHOLESTEROL"> CHOLESTEROL
+                    <input type="number" name="CHOLESTEROL">
+                </label> <br><br>
+                 <label for="FBS"> FBS
+                    <input type="number" name="FBS"  min="0" max="1">
+                </label> <br><br>
+                 <label for="RESTECG"> RESTECG
+                    <input type="number" name="RESTECG"  min="0" max="1">
+                </label> <br><br>
+                 <label for="MINIMUM HEART RATE ACHIEVED"> MINIMUM HEART RATE ACHIEVED
+                    <input type="number" name="MINIMUM HEART RATE ACHIEVED">
+                </label> <br><br>
+                 <label for="EXERSISE INDUCED ANGINA"> EXERSISE INDUCED ANGINA
+                    <input type="number" name="EXERSISE INDUCED ANGINA"  min="0" max="1">
+                </label> <br><br>
+                 <label for="OLDPEAK"> OLDPEAK
+                    <input type="number" name="OLDPEAK">
+                </label> <br><br>
+                 <label for="SLOPE"> SLOPE
+                    <input type="number" name="SLOPE"  min="0" max="2">
+                </label> <br><br>
+                 <label for="CA"> MAJOR COLOURED VESSELS
+                    <input type="number" name="MAJOR COLOURED VESSELS"  min="0" max="2">
+                </label> <br><br>
+                 <label for="THAL"> THAL SCORE
+                    <input type="number" name="THAL"  min="0" max="1">
+                </label> <br><br>
+            </div>
+
+            
+        </div>     
+        <input type="submit" value="Submit">
+        </div> 
+    </form>
+</body>
+</html>
