@@ -3,6 +3,7 @@ app = Flask(__name__)
 from covid import testData
 from park import testData as park
 from heart import testData_heart
+from diabetes import testData_diabetes
 from stroke import testData as stroke
 import sqlite3
 import smtplib
@@ -33,6 +34,10 @@ def heart():
 def stroke():
     return render_template('test_stroke.html')
 
+@app.route('/diabetes')
+def diabetes():
+    return render_template('test_diabetes.html')
+
 @app.route('/sub', methods= ["POST"])
 def sub():
     if request.method == 'POST':
@@ -50,6 +55,16 @@ def sub_heart():
         input_data = tuple(input_dict.values())
         result = testData_heart(input_data)
         name="HEART ATATCK"
+        data=[name,result]
+        return render_template('park_res.html',n = data)
+    
+@app.route('/sub_diabetes', methods= ["POST"])
+def sub_diabetes():
+    if request.method == 'POST':
+        input_dict = request.form
+        input_data = tuple(input_dict.values())
+        result = testData_diabetes(input_data)
+        name="Diabetes"
         data=[name,result]
         return render_template('park_res.html',n = data)
 

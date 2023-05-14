@@ -29,5 +29,5 @@ def testData(input_data):
     if (prediction[0] == 0):
         output =  "NEGATIVE."
     else:
-        output = "POSATIVE."
+        output = "POSITIVE."
     return output

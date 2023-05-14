@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Health CHECKUP</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-lg-6 {
+            flex: 1;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/sub_diabetes" method="POST">
+        <div class="row">
+            <div class="input">
+                <h1>Diabetes Health CHECKUP</h1>
+                <label for="pregnancies">Pregnancies
+                    <input type="number" name="pregnancies">
+                </label> <br><br>
+                <label for="glucose">Glucose
+                    <input type="number" name="glucose">
+                </label> <br><br>
+                <label for="bloodPressure">Blood Pressure
+                    <input type="number" name="bloodPressure">
+                </label> <br><br>
+                <label for="skinThickness">Skin Thickness
+                    <input type="number" name="skinThickness">
+                </label> <br><br>
+                <label for="insulin">Insulin
+                    <input type="number" name="insulin">
+                </label> <br><br>
+                <label for="bmi">BMI
+                    <input type="number" name="bmi">
+                </label> <br><br>
+                <label for="diabetesPedigreeFunction">Diabetes Pedigree Function
+                    <input type="number" name="diabetesPedigreeFunction">
+                </label> <br><br>
+                <label for="age">Age
+                    <input type="number" name="age">
+                </label> <br><br>
+            </div>
+        </div>     
+        <input type="submit" value="Submit">
+        </div> 
+    </form>
+</body>
+</html>
